@@ -1,8 +1,14 @@
 import React from 'react'
 
-function App() {
+import NotificationButton from "./components/notificationButton";
 
-  return <h1>Hello World</h1>
+function App() {
+    return (
+        <>
+            <h1>Hello World</h1>
+            <NotificationButton />
+        </>
+    )
 }
 
 export default App

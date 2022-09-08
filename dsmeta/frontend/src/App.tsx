@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 import Header from "./components/Header";
 import NotificationButton from "./components/NotificationButton";
@@ -22,4 +22,4 @@ function App() {
     )
 }
 
-export default App
+export default App;

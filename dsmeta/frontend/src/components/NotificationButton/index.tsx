@@ -9,4 +9,4 @@ function NotificationButton(){
         </div>
     )
 }
-export default NotificationButton
+export default NotificationButton;

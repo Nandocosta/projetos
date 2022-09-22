@@ -22,7 +22,7 @@ public class SaleService {
    public Page<Sale> findSales(String minDate, String maxDate, Pageable pageable){
 
        LocalDate toDay = LocalDate.ofInstant(Instant.now(), ZoneId.systemDefault());
-       LocalDate min = maxDate.equals("") ? toDay.minusDays(365) : LocalDate.parse(minDate);
+       LocalDate min = minDate.equals("") ? toDay.minusDays(365) : LocalDate.parse(minDate);
        LocalDate max = maxDate.equals("") ? toDay : LocalDate.parse(maxDate);
 
      return repository.findSales(min, max, pageable);
